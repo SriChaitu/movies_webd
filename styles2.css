@@ -1,0 +1,188 @@
+.container {
+    text-align: center;
+}
+body{
+    background-color:  darkgrey;
+}
+#newItemInput{
+    padding: 5px 10px;
+    font-size: 16px;
+    vertical-align: middle;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    margin: 5px;
+}
+button{
+    border-radius: 15px;
+    width: 100px;
+    margin-left: 50px;
+    color: white;
+    background-color: black;
+    height: 30px;
+}
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.title {
+    text-align: left;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    margin-right: 100px;
+    transition: transform 0.3s;
+}
+.title:hover{
+    transform: scale(1.15);
+}
+
+#nav1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    float: left;
+}
+
+#movieList {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    padding-left: 20px;
+    margin-left: 150px; 
+}
+
+#nav{
+    display: inline-block;
+}
+.search-container {
+    float:right;
+    margin-top: 60px;
+    margin-left: 200px;
+    width: 300px;
+
+}
+
+
+
+#searchInput {
+    padding: 5px 10px;
+    font-size: 16px;
+    vertical-align: middle;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+}
+
+
+.list{
+    display: flex;
+}
+
+
+
+.movie-item img {
+    width: 200px;
+    height: auto;
+}
+
+.movie-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.movie-item:hover .movie-item-overlay {
+    opacity: 1;
+}
+
+.movie-title,
+.movie-genre,
+.movie-rating {
+
+    padding: 5px; 
+    color: white;
+    transition: transform 0.3s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+}
+h3,p{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.movie-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.movie-title:hover,
+.movie-genre:hover,
+.movie-rating:hover{
+    padding: 5px; 
+    font-weight: bold;
+    transform: scale(1.05);
+
+}
+
+.movie-genre,
+.movie-rating {
+    font-size: 14px;
+}
+
+#movieDetails {
+
+    margin-top: 10px;
+    padding: 10px;
+    padding-right: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: left;
+    max-width: 400px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+#movieDetails img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#movieDetails .movie-info {
+    flex-grow: 1;
+}
+
+.movie-item {
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.movie-item:hover {
+    transform: scale(1.15);
+}
+.end{
+    margin:50px;
+    text-align: left;
+    float: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.end h3{
+    font-size: 20px;
+    color: white;
+}
+
